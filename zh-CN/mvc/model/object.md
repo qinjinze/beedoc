@@ -80,7 +80,7 @@ if created, id, err := o.ReadOrCreate(&user, "Name"); err == nil {
 o := orm.NewOrm()
 var user User
 user.Name = "slene"
-user.IsActive = true
+user.IsActive = true   //在beego.1.12版本中是否存在IsActive？
 
 id, err := o.Insert(&user)
 if err == nil {
